@@ -87,6 +87,10 @@ public class Lab09 {
         }catch (NoSuchElementException e){
             System.out.println("Empty file");
             throw e;
+        }catch (ArithmeticException a){
+            System.out.println("is invalid");
+        }catch (NumberFormatException n){
+            System.out.println("is invalid");
         }finally {
             scanF.close();
         }
